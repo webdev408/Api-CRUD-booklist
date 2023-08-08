@@ -6,6 +6,7 @@ import Home from './components/Home'
 import AddBooks from './components/AddBooks'
 import EditBook from './components/EditBook'
 import Navbar from './Navbar'
+import Theme from './components/Theme'
 
 function App() {
   const [books, setBooks] = useState([])
@@ -90,6 +91,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
+      <Route path="/theme" element={<Theme />} />
         <Route path="/" element={<Home books={books} handleDelete={handleDelete} />} />
         <Route
           path="/add-books/:id"

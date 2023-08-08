@@ -16,7 +16,10 @@ const Navbar = () => {
               Add Books
             </NavLink>
             <NavLink className="nav-link" to="/edit-books/:id">
-              Edit Book
+              Edit Books
+            </NavLink>
+            <NavLink className="nav-link" to="/theme">
+            Theme
             </NavLink>
           </div>
         </div>
